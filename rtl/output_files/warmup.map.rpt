@@ -1,5 +1,5 @@
 Analysis & Synthesis report for warmup
-Wed Sep 10 20:20:49 2014
+Wed Sep 17 12:19:47 2014
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed Sep 10 20:20:49 2014          ;
+; Analysis & Synthesis Status        ; Failed - Wed Sep 17 12:19:47 2014          ;
 ; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; warmup                                     ;
 ; Top-level Entity Name              ; warmup                                     ;
@@ -157,22 +157,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Sep 10 20:20:46 2014
+    Info: Processing started: Wed Sep 17 12:19:44 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off warmup -c warmup
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file uart_transceiver.v
+    Info (12023): Found entity 1: uart_transceiver
+Info (12021): Found 1 design units, including 1 entities, in source file uart.v
+    Info (12023): Found entity 1: uart
+Error (12049): Can't compile duplicate declarations of entity "uart" into library "work" File: /home/wagner/UEFS/2014.2/MI - SD/t02-warmup/rtl/uart.vhd Line: 11
+    Error (12180): Instance could be entity "uart" in file uart.v compiled in library work File: /home/wagner/UEFS/2014.2/MI - SD/t02-warmup/rtl/uart.v Line: 18
+    Error (12180): Instance could be entity "uart" in file uart.vhd compiled in library work File: /home/wagner/UEFS/2014.2/MI - SD/t02-warmup/rtl/uart.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file uart.vhd
     Info (12022): Found design unit 1: uart-Behavioral
-    Info (12023): Found entity 1: uart
 Info (12021): Found 2 design units, including 1 entities, in source file uart_tb.vhd
     Info (12022): Found design unit 1: uart_tb-Behavioral
     Info (12023): Found entity 1: uart_tb
 Info (12021): Found 1 design units, including 1 entities, in source file warmup.v
     Info (12023): Found entity 1: warmup
-Error (10161): Verilog HDL error at warmup.v(2): object "uart" is not declared File: /home/wagner/UEFS/2014.2/MI - SD/t02-warmup/rtl/warmup.v Line: 2
-Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 386 megabytes
-    Error: Processing ended: Wed Sep 10 20:20:49 2014
-    Error: Elapsed time: 00:00:03
+Info (12021): Found 1 design units, including 1 entities, in source file rs232_test.v
+    Info (12023): Found entity 1: rs232_test
+Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 3 errors, 1 warning
+    Error: Peak virtual memory: 391 megabytes
+    Error: Processing ended: Wed Sep 17 12:19:48 2014
+    Error: Elapsed time: 00:00:04
     Error: Total CPU time (on all processors): 00:00:02
 
 

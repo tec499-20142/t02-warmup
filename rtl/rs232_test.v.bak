@@ -1,0 +1,59 @@
+
+`timescale 1ns/100ps 
+
+module rs232_test;
+
+	//outputs
+	reg RX;
+	reg clk;
+	
+	//inputs
+	wire[7:0] monitor;
+	wire r_ready;
+
+	warmup rs232(
+			.rx_data(monitor),
+			.rx_ready(r_ready),
+			.clk(clk),
+			.rx(RX)
+		);
+	
+	// create a 50Mhz clock
+	always
+		#10 clk = ~clk;
+		
+	// initial blocks are sequential and start at time 0
+	initial 
+		begin
+			RX = 1'b0;
+			clk = 1'b0;
+			//monitor = 8'b0;
+			//r_ready = 1'b0;
+		
+		end
+
+	initial
+		begin
+			wait( clk == 1'b0 );
+			   RX = 1'b0;
+			wait( clk == 1'b0 );
+			   RX = 1'b1;
+			wait( clk == 1'b0 );
+			   RX = 1'b1;
+			wait( clk == 1'b0 );
+			   RX = 1'b0;
+			wait( clk == 1'b0 );
+			   RX = 1'b0;
+			wait( clk == 1'b0 );
+			   RX = 1'b0;
+			wait( clk == 1'b0 );
+			   RX = 1'b0;
+			wait( clk == 1'b0 );
+			   RX = 1'b0;
+			wait( clk == 1'b0 );
+			   RX = 1'b0;
+			wait( clk == 1'b0 );;
+			   RX = 1'b1;
+		end
+
+endmodule

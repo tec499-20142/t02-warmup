@@ -1,0 +1,16 @@
+
+State Machine - |warmup|uart:rs232|rx_fsm
+Name rx_fsm.stop2 rx_fsm.stop1 rx_fsm.parity rx_fsm.data rx_fsm.idle 
+rx_fsm.idle 0 0 0 0 0 
+rx_fsm.data 0 0 0 1 1 
+rx_fsm.parity 0 0 1 0 1 
+rx_fsm.stop1 0 1 0 0 1 
+rx_fsm.stop2 1 0 0 0 1 
+
+State Machine - |warmup|uart:rs232|tx_fsm
+Name tx_fsm.stop2 tx_fsm.stop1 tx_fsm.parity tx_fsm.data tx_fsm.idle 
+tx_fsm.idle 0 0 0 0 0 
+tx_fsm.data 0 0 0 1 1 
+tx_fsm.parity 0 0 1 0 1 
+tx_fsm.stop1 0 1 0 0 1 
+tx_fsm.stop2 1 0 0 0 1 
