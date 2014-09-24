@@ -1,13 +1,13 @@
 |warmup
-rx_data[0] <= uart:rs232.port9
-rx_data[1] <= uart:rs232.port9
-rx_data[2] <= uart:rs232.port9
-rx_data[3] <= uart:rs232.port9
-rx_data[4] <= uart:rs232.port9
-rx_data[5] <= uart:rs232.port9
-rx_data[6] <= uart:rs232.port9
-rx_data[7] <= uart:rs232.port9
-rx_ready <= uart:rs232.port8
+rx_data[0] << uart:rs232.port9
+rx_data[1] << uart:rs232.port9
+rx_data[2] << uart:rs232.port9
+rx_data[3] << uart:rs232.port9
+rx_data[4] << uart:rs232.port9
+rx_data[5] << uart:rs232.port9
+rx_data[6] << uart:rs232.port9
+rx_data[7] << uart:rs232.port9
+rx_ready << uart:rs232.port8
 clk => clk.IN1
 rx => rx.IN1
 

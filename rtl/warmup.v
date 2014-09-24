@@ -13,7 +13,7 @@ module warmup(
 		rx,	// RS232 received serial data
 		tx,	// RS232 transmitted serial data
 		// RS232/UART Configuration
-		0,//par_en,		// Parity bit enable
+		1'b0,//par_en,		// Parity bit enable
 		// uPC Interface
 		tx_req,					// Request SEND of data
 		tx_end,					// Data SENDED

@@ -1,6 +1,6 @@
 EDA Netlist Writer report for warmup
-Sun Sep 14 20:33:19 2014
-Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Mon Sep 22 08:21:14 2014
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
 ---------------------
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Sep 14 20:33:19 2014 ;
+; EDA Netlist Writer Status ; Successful - Mon Sep 22 08:21:14 2014 ;
 ; Revision Name             ; warmup                                ;
 ; Top-level Entity Name     ; warmup                                ;
 ; Family                    ; Cyclone III                           ;
@@ -66,38 +66,42 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                            ;
-+-------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                       ;
-+-------------------------------------------------------------------------------------------------------+
-; /home/wagner/UEFS/2014.2/MI - SD/t02-warmup/rtl/simulation/modelsim/warmup_7_1200mv_100c_slow.vo      ;
-; /home/wagner/UEFS/2014.2/MI - SD/t02-warmup/rtl/simulation/modelsim/warmup_min_1200mv_-40c_fast.vo    ;
-; /home/wagner/UEFS/2014.2/MI - SD/t02-warmup/rtl/simulation/modelsim/warmup.vo                         ;
-; /home/wagner/UEFS/2014.2/MI - SD/t02-warmup/rtl/simulation/modelsim/warmup_7_1200mv_100c_v_slow.sdo   ;
-; /home/wagner/UEFS/2014.2/MI - SD/t02-warmup/rtl/simulation/modelsim/warmup_min_1200mv_-40c_v_fast.sdo ;
-; /home/wagner/UEFS/2014.2/MI - SD/t02-warmup/rtl/simulation/modelsim/warmup_v.sdo                      ;
-+-------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                                       ;
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                                  ;
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/Filipe Boaventura/Documents/ECOMP/5º Semestre/SD/Problema 1/WarmUp/t02-warmup/rtl/simulation/modelsim/warmup_7_1200mv_100c_slow.vo      ;
+; C:/Users/Filipe Boaventura/Documents/ECOMP/5º Semestre/SD/Problema 1/WarmUp/t02-warmup/rtl/simulation/modelsim/warmup_7_1200mv_-40c_slow.vo      ;
+; C:/Users/Filipe Boaventura/Documents/ECOMP/5º Semestre/SD/Problema 1/WarmUp/t02-warmup/rtl/simulation/modelsim/warmup_min_1200mv_-40c_fast.vo    ;
+; C:/Users/Filipe Boaventura/Documents/ECOMP/5º Semestre/SD/Problema 1/WarmUp/t02-warmup/rtl/simulation/modelsim/warmup.vo                         ;
+; C:/Users/Filipe Boaventura/Documents/ECOMP/5º Semestre/SD/Problema 1/WarmUp/t02-warmup/rtl/simulation/modelsim/warmup_7_1200mv_100c_v_slow.sdo   ;
+; C:/Users/Filipe Boaventura/Documents/ECOMP/5º Semestre/SD/Problema 1/WarmUp/t02-warmup/rtl/simulation/modelsim/warmup_7_1200mv_-40c_v_slow.sdo   ;
+; C:/Users/Filipe Boaventura/Documents/ECOMP/5º Semestre/SD/Problema 1/WarmUp/t02-warmup/rtl/simulation/modelsim/warmup_min_1200mv_-40c_v_fast.sdo ;
+; C:/Users/Filipe Boaventura/Documents/ECOMP/5º Semestre/SD/Problema 1/WarmUp/t02-warmup/rtl/simulation/modelsim/warmup_v.sdo                      ;
++--------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
 ; EDA Netlist Writer Messages ;
 +-----------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit EDA Netlist Writer
+Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Sep 14 20:33:18 2014
+    Info: Processing started: Mon Sep 22 08:21:14 2014
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off warmup -c warmup
-Info (204019): Generated file warmup_7_1200mv_100c_slow.vo in folder "/home/wagner/UEFS/2014.2/MI - SD/t02-warmup/rtl/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file warmup_min_1200mv_-40c_fast.vo in folder "/home/wagner/UEFS/2014.2/MI - SD/t02-warmup/rtl/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file warmup.vo in folder "/home/wagner/UEFS/2014.2/MI - SD/t02-warmup/rtl/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file warmup_7_1200mv_100c_v_slow.sdo in folder "/home/wagner/UEFS/2014.2/MI - SD/t02-warmup/rtl/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file warmup_min_1200mv_-40c_v_fast.sdo in folder "/home/wagner/UEFS/2014.2/MI - SD/t02-warmup/rtl/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file warmup_v.sdo in folder "/home/wagner/UEFS/2014.2/MI - SD/t02-warmup/rtl/simulation/modelsim/" for EDA simulation tool
-Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 347 megabytes
-    Info: Processing ended: Sun Sep 14 20:33:19 2014
-    Info: Elapsed time: 00:00:01
+Info (204019): Generated file warmup_7_1200mv_100c_slow.vo in folder "C:/Users/Filipe Boaventura/Documents/ECOMP/5º Semestre/SD/Problema 1/WarmUp/t02-warmup/rtl/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file warmup_7_1200mv_-40c_slow.vo in folder "C:/Users/Filipe Boaventura/Documents/ECOMP/5º Semestre/SD/Problema 1/WarmUp/t02-warmup/rtl/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file warmup_min_1200mv_-40c_fast.vo in folder "C:/Users/Filipe Boaventura/Documents/ECOMP/5º Semestre/SD/Problema 1/WarmUp/t02-warmup/rtl/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file warmup.vo in folder "C:/Users/Filipe Boaventura/Documents/ECOMP/5º Semestre/SD/Problema 1/WarmUp/t02-warmup/rtl/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file warmup_7_1200mv_100c_v_slow.sdo in folder "C:/Users/Filipe Boaventura/Documents/ECOMP/5º Semestre/SD/Problema 1/WarmUp/t02-warmup/rtl/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file warmup_7_1200mv_-40c_v_slow.sdo in folder "C:/Users/Filipe Boaventura/Documents/ECOMP/5º Semestre/SD/Problema 1/WarmUp/t02-warmup/rtl/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file warmup_min_1200mv_-40c_v_fast.sdo in folder "C:/Users/Filipe Boaventura/Documents/ECOMP/5º Semestre/SD/Problema 1/WarmUp/t02-warmup/rtl/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file warmup_v.sdo in folder "C:/Users/Filipe Boaventura/Documents/ECOMP/5º Semestre/SD/Problema 1/WarmUp/t02-warmup/rtl/simulation/modelsim/" for EDA simulation tool
+Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 410 megabytes
+    Info: Processing ended: Mon Sep 22 08:21:14 2014
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 
