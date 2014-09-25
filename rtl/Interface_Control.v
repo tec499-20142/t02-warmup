@@ -1,11 +1,11 @@
-module Interface_Control(clock, reset, rx_data_ready, rx_data, rx_dataOperation, rx_dataA, rx_dataB, counter);
+module Interface_Control(clock, reset, rx_data_ready, rx_data, rx_dataOperation, rx_dataA, rx_dataB);
 	
 	input clock;
 	input reset;
 	input rx_data_ready;
 	input[7:0] rx_data;
 	
-	output reg[1:0] counter;
+	reg[1:0] counter;
 	reg[7:0] dataA;
 	reg[7:0] operation;
 
