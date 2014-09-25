@@ -1,5 +1,5 @@
 Flow report for warmup
-Mon Sep 22 08:51:39 2014
+Thu Sep 25 15:28:24 2014
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,22 +40,22 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Sep 22 08:51:39 2014      ;
+; Flow Status                        ; Successful - Thu Sep 25 15:28:24 2014      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; warmup                                     ;
-; Top-level Entity Name              ; warmup                                     ;
+; Top-level Entity Name              ; Main                                       ;
 ; Family                             ; Cyclone III                                ;
 ; Device                             ; EP3C25F324I7                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; N/A until Partition Merge                  ;
-;     Total combinational functions  ; N/A until Partition Merge                  ;
-;     Dedicated logic registers      ; N/A until Partition Merge                  ;
-; Total registers                    ; N/A until Partition Merge                  ;
-; Total pins                         ; N/A until Partition Merge                  ;
-; Total virtual pins                 ; N/A until Partition Merge                  ;
-; Total memory bits                  ; N/A until Partition Merge                  ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
-; Total PLLs                         ; N/A until Partition Merge                  ;
+; Total logic elements               ; 223 / 24,624 ( < 1 % )                     ;
+;     Total combinational functions  ; 194 / 24,624 ( < 1 % )                     ;
+;     Dedicated logic registers      ; 84 / 24,624 ( < 1 % )                      ;
+; Total registers                    ; 84                                         ;
+; Total pins                         ; 12 / 216 ( 6 % )                           ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0 / 608,256 ( 0 % )                        ;
+; Embedded Multiplier 9-bit elements ; 1 / 132 ( < 1 % )                          ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
 +------------------------------------+--------------------------------------------+
 
 
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/22/2014 08:51:38 ;
+; Start date & time ; 09/25/2014 15:27:37 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; warmup              ;
 +-------------------+---------------------+
@@ -75,44 +75,57 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 33730928158507.141138669802996        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 172136278985531.141166965704400       ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 100                                   ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; -40                                   ; --            ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                  ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; Main        ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; Main        ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; Main        ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; Main                                  ; warmup        ; --          ; --             ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                          ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:01     ; 1.0                     ; 505 MB              ; 00:00:01                           ;
-; Total                  ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
-+------------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 690 MB              ; 00:00:04                           ;
+; Fitter                    ; 00:00:15     ; 1.0                     ; 852 MB              ; 00:00:15                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 618 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 623 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 842 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:27     ; --                      ; --                  ; 00:00:27                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                     ;
-+------------------------+------------------+-----------+------------+----------------+
-; Module Name            ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+------------------------+------------------+-----------+------------+----------------+
-; Analysis & Elaboration ; Filipe-pc        ; Windows 7 ; 6.2        ; x86_64         ;
-+------------------------+------------------+-----------+------------+----------------+
++---------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                             ;
++---------------------------+------------------+----------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++---------------------------+------------------+----------------+------------+----------------+
+; Analysis & Synthesis      ; Tesla            ; Ubuntu 14.04.1 ; 14         ; x86_64         ;
+; Fitter                    ; Tesla            ; Ubuntu 14.04.1 ; 14         ; x86_64         ;
+; Assembler                 ; Tesla            ; Ubuntu 14.04.1 ; 14         ; x86_64         ;
+; TimeQuest Timing Analyzer ; Tesla            ; Ubuntu 14.04.1 ; 14         ; x86_64         ;
+; EDA Netlist Writer        ; Tesla            ; Ubuntu 14.04.1 ; 14         ; x86_64         ;
++---------------------------+------------------+----------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off warmup -c warmup --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off warmup -c warmup
+quartus_fit --read_settings_files=off --write_settings_files=off warmup -c warmup
+quartus_asm --read_settings_files=off --write_settings_files=off warmup -c warmup
+quartus_sta warmup -c warmup
+quartus_eda --read_settings_files=off --write_settings_files=off warmup -c warmup
 
 
 

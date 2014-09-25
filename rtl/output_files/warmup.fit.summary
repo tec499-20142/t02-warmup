@@ -1,16 +1,16 @@
-Fitter Status : Successful - Mon Sep 22 08:21:00 2014
+Fitter Status : Successful - Thu Sep 25 15:28:00 2014
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : warmup
-Top-level Entity Name : warmup
+Top-level Entity Name : Main
 Family : Cyclone III
 Device : EP3C25F324I7
 Timing Models : Final
-Total logic elements : 48 / 24,624 ( < 1 % )
-    Total combinational functions : 30 / 24,624 ( < 1 % )
-    Dedicated logic registers : 42 / 24,624 ( < 1 % )
-Total registers : 42
-Total pins : 11 / 216 ( 5 % )
+Total logic elements : 223 / 24,624 ( < 1 % )
+    Total combinational functions : 194 / 24,624 ( < 1 % )
+    Dedicated logic registers : 84 / 24,624 ( < 1 % )
+Total registers : 84
+Total pins : 12 / 216 ( 6 % )
 Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
-Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Embedded Multiplier 9-bit elements : 1 / 132 ( < 1 % )
 Total PLLs : 0 / 4 ( 0 % )
