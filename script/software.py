@@ -16,27 +16,39 @@ rs232 = serial.Serial(path,9600) # 9600 TAXA de transmissão
 
 while True:
 	try:
+		os.system('clear')
 		op1 = 256
 		op2 = 256
 		
 		op = raw_input('Operação: ')
-		rs232.write(val1)
 		
+		if op == '+':
+			#rs232.write('{0:08b}'.format(0))
+			rs232.write(chr(0))
+		elif op == '-':			
+			rs232.write(chr(1))
+		elif op == '&':
+			rs232.write(chr(2))
+		elif op == '|':
+			rs232.write(chr(3))
+		elif op == '*':
+			rs232.write(chr(4))
+		elif op == '/':
+			rs232.write(chr(5))
+
 		while op1 > 255:
-			o1 = raw_input('Operando 1: ')
-			if o1 > 255:
+			op1 = int(raw_input('Operando 1: '))
+			if op1 > 255:
 				print 'Número possui mais que 8 bits.'
-		rs232.write('{0:08b}'.format(int(o1)))
+		rs232.write(chr(op1))
 		
 		while op2 > 255:
-			o2 = raw_input('Operando 2: ')
-			if o2 > 255:
+			op2 = int(raw_input('Operando 2: '))
+			if op2 > 255:
 				print 'Número possui mais que 8 bits.'
-		rs232.write('{0:08b}'.format(int(o2)))
+		rs232.write(chr(op2))
 		
-		os.system('clear')
-
 	except KeyboardInterrupt:
-		print 'Programa finalizado!'
+		print '\n\n\tPrograma finalizado!\n'
 		break
 
