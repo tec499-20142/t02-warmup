@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Sep 25 15:28:00 2014
-Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Fitter Status : Successful - Wed Oct 01 18:38:58 2014
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Web Edition
 Revision Name : warmup
-Top-level Entity Name : Main
+Top-level Entity Name : hu3
 Family : Cyclone III
 Device : EP3C25F324I7
 Timing Models : Final
-Total logic elements : 223 / 24,624 ( < 1 % )
-    Total combinational functions : 194 / 24,624 ( < 1 % )
+Total logic elements : 244 / 24,624 ( < 1 % )
+    Total combinational functions : 209 / 24,624 ( < 1 % )
     Dedicated logic registers : 84 / 24,624 ( < 1 % )
 Total registers : 84
 Total pins : 12 / 216 ( 6 % )

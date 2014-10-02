@@ -41,11 +41,11 @@ module Interface_Control(clock, reset, rx_data_ready, rx_data, rx_dataOperation,
 			
 		end
 		
-		if(reset) begin
+		if(!reset) begin
 			rx_dataOperation <= 8'b0000000;
 			rx_dataA <= 8'b0000000;
 			rx_dataB <= 8'b0000000;
-			counter <= 2'b00;
+			counter <= 2'b01;
 		end
 	end
 endmodule	

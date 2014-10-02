@@ -38,10 +38,10 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C25F324I7
-set_global_assignment -name TOP_LEVEL_ENTITY Main
+set_global_assignment -name TOP_LEVEL_ENTITY hu3
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:31:44  SEPTEMBER 10, 2014"
-set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name LAST_QUARTUS_VERSION 9.0
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
@@ -58,7 +58,29 @@ set_global_assignment -name VERILOG_FILE warmup.v
 set_global_assignment -name VERILOG_FILE rs232_test.v
 set_global_assignment -name VERILOG_FILE ula_tb.v
 set_global_assignment -name BDF_FILE Main.bdf
+set_global_assignment -name MISC_FILE "C:/Documents and Settings/Aluno/Desktop/t02-warmup-master/rtl/warmup.dpf"
+set_global_assignment -name BDF_FILE hu3.bdf
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_N9 -to overflow
+set_location_assignment PIN_L1 -to rx
+set_global_assignment -name BDF_FILE warmup.bdf
+set_global_assignment -name BDF_FILE Teste.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Teste.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE Teste.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_location_assignment PIN_M18 -to result_alu[7]
+set_location_assignment PIN_G18 -to result_alu[6]
+set_location_assignment PIN_H18 -to result_alu[5]
+set_location_assignment PIN_R3 -to result_alu[4]
+set_location_assignment PIN_H17 -to result_alu[3]
+set_location_assignment PIN_T3 -to result_alu[2]
+set_location_assignment PIN_E17 -to result_alu[1]
+set_location_assignment PIN_R2 -to result_alu[0]
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_location_assignment PIN_F1 -to reset
+set_location_assignment PIN_B9 -to clock

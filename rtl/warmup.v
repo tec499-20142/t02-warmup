@@ -1,29 +1,44 @@
-
 module warmup(
-	output reg[7:0] rx_data,
-	output wire rx_ready,
-	input clk,
-	input rx);
+input clk,
+input rst,
+input rx,
+output [7:0] result_data,
+output overflow
 
-	uart rs232(
-		// Control
-		clk,		//Main clock
-		rst,	// Main reset
-		// External Interface
-		rx,	// RS232 received serial data
-		tx,	// RS232 transmitted serial data
-		// RS232/UART Configuration
-		1'b0,//par_en,		// Parity bit enable
-		// uPC Interface
-		tx_req,					// Request SEND of data
-		tx_end,					// Data SENDED
-		tx_data,					// Data to transmit
-		rx_ready,				// Received data ready to uPC read
-		rx_data					// Received data 
-	);
-	
-	/*always @(posedge clk)
-		begin
-		
-		end*/
-endmodule
+);
+
+wire _rx_ready;
+wire [7:0]_rx_data;
+wire [7:0]_data_a;
+wire [7:0]_data_b;
+wire [7:0]_operation;
+
+uart BLOCO1 (
+  .clk (clk),
+  .rst (rst),
+  .rx (rx),
+  .rx_ready (_rx_ready),
+  .rx_data (_rx_data) 
+  );
+  
+  
+ Interface_Control BLOCO2 (
+ 
+.clock(clk),
+.reset(rst),
+.rx_data_ready(_rx_ready),
+.rx_data(_rx_data),
+.rx_dataOperation(_operation),
+.rx_dataA (_data_a),
+.rx_dataB(_data_b)
+ );
+ 
+ ula_k BLOCO3 (
+ 
+.operator1 (_data_a),
+.operator2(_data_b),
+.operation_alu(_operation),
+.result_alu(result_data),
+.overflow(overflow)
+ );
+ endmodule

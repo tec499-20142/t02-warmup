@@ -2,76 +2,52 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 100C Model Setup 'Interface_Control:inst|rx_dataOperation[1]'
-Slack : -13.343
-TNS   : -68.196
+Type  : Slow 1200mV 100C Model Setup 'Interface_Control:inst1|rx_dataOperation[1]'
+Slack : -14.993
+TNS   : -73.810
 
 Type  : Slow 1200mV 100C Model Setup 'clock'
-Slack : -2.142
-TNS   : -140.625
+Slack : -2.809
+TNS   : -184.642
 
-Type  : Slow 1200mV 100C Model Hold 'Interface_Control:inst|rx_dataOperation[1]'
-Slack : -2.163
-TNS   : -12.257
+Type  : Slow 1200mV 100C Model Hold 'Interface_Control:inst1|rx_dataOperation[1]'
+Slack : -1.168
+TNS   : -7.770
 
 Type  : Slow 1200mV 100C Model Hold 'clock'
-Slack : 0.402
+Slack : 0.398
 TNS   : 0.000
 
-Type  : Slow 1200mV 100C Model Minimum Pulse Width 'clock'
-Slack : -3.000
-TNS   : -148.268
-
-Type  : Slow 1200mV 100C Model Minimum Pulse Width 'Interface_Control:inst|rx_dataOperation[1]'
-Slack : 0.438
-TNS   : 0.000
-
-Type  : Slow 1200mV -40C Model Setup 'Interface_Control:inst|rx_dataOperation[1]'
-Slack : -11.337
-TNS   : -59.815
+Type  : Slow 1200mV -40C Model Setup 'Interface_Control:inst1|rx_dataOperation[1]'
+Slack : -12.777
+TNS   : -63.557
 
 Type  : Slow 1200mV -40C Model Setup 'clock'
-Slack : -1.821
-TNS   : -114.397
+Slack : -2.465
+TNS   : -155.543
 
-Type  : Slow 1200mV -40C Model Hold 'Interface_Control:inst|rx_dataOperation[1]'
-Slack : -2.010
-TNS   : -11.473
+Type  : Slow 1200mV -40C Model Hold 'Interface_Control:inst1|rx_dataOperation[1]'
+Slack : -1.082
+TNS   : -6.885
 
 Type  : Slow 1200mV -40C Model Hold 'clock'
-Slack : 0.330
+Slack : 0.333
 TNS   : 0.000
 
-Type  : Slow 1200mV -40C Model Minimum Pulse Width 'clock'
-Slack : -3.000
-TNS   : -148.268
-
-Type  : Slow 1200mV -40C Model Minimum Pulse Width 'Interface_Control:inst|rx_dataOperation[1]'
-Slack : 0.304
-TNS   : 0.000
-
-Type  : Fast 1200mV -40C Model Setup 'Interface_Control:inst|rx_dataOperation[1]'
-Slack : -5.538
-TNS   : -28.367
+Type  : Fast 1200mV -40C Model Setup 'Interface_Control:inst1|rx_dataOperation[1]'
+Slack : -6.245
+TNS   : -29.938
 
 Type  : Fast 1200mV -40C Model Setup 'clock'
-Slack : -0.451
-TNS   : -18.098
+Slack : -0.824
+TNS   : -37.005
 
-Type  : Fast 1200mV -40C Model Hold 'Interface_Control:inst|rx_dataOperation[1]'
-Slack : -1.078
-TNS   : -6.313
+Type  : Fast 1200mV -40C Model Hold 'Interface_Control:inst1|rx_dataOperation[1]'
+Slack : -0.645
+TNS   : -4.352
 
 Type  : Fast 1200mV -40C Model Hold 'clock'
-Slack : 0.173
-TNS   : 0.000
-
-Type  : Fast 1200mV -40C Model Minimum Pulse Width 'clock'
-Slack : -3.000
-TNS   : -108.685
-
-Type  : Fast 1200mV -40C Model Minimum Pulse Width 'Interface_Control:inst|rx_dataOperation[1]'
-Slack : 0.295
+Slack : 0.084
 TNS   : 0.000
 
 ------------------------------------------------------------

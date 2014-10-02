@@ -1,6 +1,6 @@
 Flow report for warmup
-Thu Sep 25 15:28:24 2014
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Wed Oct 01 18:39:18 2014
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
 ---------------------
@@ -13,15 +13,13 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   5. Flow Elapsed Time
   6. Flow OS Summary
   7. Flow Log
-  8. Flow Messages
-  9. Flow Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2013 Altera Corporation
+Copyright (C) 1991-2009 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -37,26 +35,27 @@ applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Flow Summary                                                                    ;
-+------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Thu Sep 25 15:28:24 2014      ;
-; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
-; Revision Name                      ; warmup                                     ;
-; Top-level Entity Name              ; Main                                       ;
-; Family                             ; Cyclone III                                ;
-; Device                             ; EP3C25F324I7                               ;
-; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 223 / 24,624 ( < 1 % )                     ;
-;     Total combinational functions  ; 194 / 24,624 ( < 1 % )                     ;
-;     Dedicated logic registers      ; 84 / 24,624 ( < 1 % )                      ;
-; Total registers                    ; 84                                         ;
-; Total pins                         ; 12 / 216 ( 6 % )                           ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0 / 608,256 ( 0 % )                        ;
-; Embedded Multiplier 9-bit elements ; 1 / 132 ( < 1 % )                          ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
-+------------------------------------+--------------------------------------------+
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++------------------------------------+-----------------------------------------+
+; Flow Status                        ; Successful - Wed Oct 01 18:39:18 2014   ;
+; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
+; Revision Name                      ; warmup                                  ;
+; Top-level Entity Name              ; hu3                                     ;
+; Family                             ; Cyclone III                             ;
+; Device                             ; EP3C25F324I7                            ;
+; Timing Models                      ; Final                                   ;
+; Met timing requirements            ; N/A                                     ;
+; Total logic elements               ; 244 / 24,624 ( < 1 % )                  ;
+;     Total combinational functions  ; 209 / 24,624 ( < 1 % )                  ;
+;     Dedicated logic registers      ; 84 / 24,624 ( < 1 % )                   ;
+; Total registers                    ; 84                                      ;
+; Total pins                         ; 12 / 216 ( 6 % )                        ;
+; Total virtual pins                 ; 0                                       ;
+; Total memory bits                  ; 0 / 608,256 ( 0 % )                     ;
+; Embedded Multiplier 9-bit elements ; 1 / 132 ( < 1 % )                       ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                           ;
++------------------------------------+-----------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,31 +63,32 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/25/2014 15:27:37 ;
+; Start date & time ; 10/01/2014 18:38:37 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; warmup              ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                           ;
-+-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 172136278985531.141166965704400       ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 100                                   ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; -40                                   ; --            ; --          ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                  ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                              ; --            ; Main        ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; Main        ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; Main        ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; Main                                  ; warmup        ; --          ; --             ;
-+-------------------------------------+---------------------------------------+---------------+-------------+----------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                              ;
++-------------------------------------+--------------------------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                                                    ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+--------------------------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 105425944304.141219951701420                                             ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                              ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                                ; <None>        ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 100                                                                      ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; -40                                                                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; C:/Documents and Settings/Aluno/Desktop/t02-warmup-master/rtl/warmup.dpf ; --            ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                                     ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                                                                 ; --            ; hu3         ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                    ; --            ; hu3         ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                                   ; --            ; hu3         ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                      ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                    ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                             ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; hu3                                                                      ; warmup        ; --          ; --             ;
++-------------------------------------+--------------------------------------------------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -96,26 +96,26 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 690 MB              ; 00:00:04                           ;
-; Fitter                    ; 00:00:15     ; 1.0                     ; 852 MB              ; 00:00:15                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 618 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 623 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 842 MB              ; 00:00:02                           ;
-; Total                     ; 00:00:27     ; --                      ; --                  ; 00:00:27                           ;
+; Analysis & Synthesis      ; 00:00:06     ; 1.0                     ; 190 MB              ; 00:00:05                           ;
+; Fitter                    ; 00:00:14     ; 1.0                     ; 248 MB              ; 00:00:15                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 195 MB              ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 201 MB              ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 128 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:33     ; --                      ; --                  ; 00:00:33                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                             ;
-+---------------------------+------------------+----------------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
-+---------------------------+------------------+----------------+------------+----------------+
-; Analysis & Synthesis      ; Tesla            ; Ubuntu 14.04.1 ; 14         ; x86_64         ;
-; Fitter                    ; Tesla            ; Ubuntu 14.04.1 ; 14         ; x86_64         ;
-; Assembler                 ; Tesla            ; Ubuntu 14.04.1 ; 14         ; x86_64         ;
-; TimeQuest Timing Analyzer ; Tesla            ; Ubuntu 14.04.1 ; 14         ; x86_64         ;
-; EDA Netlist Writer        ; Tesla            ; Ubuntu 14.04.1 ; 14         ; x86_64         ;
-+---------------------------+------------------+----------------+------------+----------------+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; labhard-15       ; Windows XP ; 5.1        ; i1586          ;
+; Fitter                    ; labhard-15       ; Windows XP ; 5.1        ; i1586          ;
+; Assembler                 ; labhard-15       ; Windows XP ; 5.1        ; i1586          ;
+; TimeQuest Timing Analyzer ; labhard-15       ; Windows XP ; 5.1        ; i1586          ;
+; EDA Netlist Writer        ; labhard-15       ; Windows XP ; 5.1        ; i1586          ;
++---------------------------+------------------+------------+------------+----------------+
 
 
 ------------

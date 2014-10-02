@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="warmup">
-		<CBX_INST_ENTRY INSTANCE_NAME="|Main|ula_k:inst1|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_egm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Main|ula_k:inst1|lpm_mult:Mult0" CBX_FILE_NAME="mult_19t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|hu3|ula_k:inst4|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_egm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|hu3|ula_k:inst4|lpm_mult:Mult0" CBX_FILE_NAME="mult_lv01.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
